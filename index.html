@@ -1,0 +1,2231 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="utf-8" />
+  <meta content="width=device-width, initial-scale=1.0" name="viewport" />
+  <!--<meta name="robots" content="noindex">-->
+  <title>Anjappar – Chettinad Restaurant</title>
+  <meta content="Chettinad Restaurant" name="description" />
+  <meta content="Anjappar Chettinad Restaurant" name="keywords" />
+
+
+  <!-- Favicons -->
+  <link href="assets/img/favicon.png" rel="icon" />
+  <link href="assets/img/apple-touch-icon.png" rel="apple-touch-icon" />
+
+
+
+  <!-- Google Fonts -->
+  <link
+    href="https://fonts.googleapis.com/css?family=Open+Sans:300,300i,400,400i,600,600i,700,700i|Raleway:300,300i,400,400i,500,500i,600,600i,700,700i|Poppins:300,300i,400,400i,500,500i,600,600i,700,700i"
+    rel="stylesheet" />
+
+  <!-- Vendor CSS Files -->
+  <link href="assets/vendor/aos/aos.css" rel="stylesheet" />
+  <link href="assets/vendor/bootstrap/css/bootstrap.min.css" rel="stylesheet" />
+  <link href="assets/vendor/bootstrap-icons/bootstrap-icons.css" rel="stylesheet" />
+  <link href="assets/vendor/boxicons/css/boxicons.min.css" rel="stylesheet" />
+  <link href="assets/vendor/glightbox/css/glightbox.min.css" rel="stylesheet" />
+  <link href="assets/vendor/swiper/swiper-bundle.min.css" rel="stylesheet" />
+
+  <!-- Template Main CSS File -->
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet"
+    integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
+
+
+  <!--swiper css-->
+  <link rel="stylesheet" href="assets/css/swiper-bundle.min.css">
+
+  <!--boxicons css-->
+  <link href='https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css' rel='stylesheet'>
+  <!--Google Site Verification-->
+  <meta name="google-site-verification" content="wok8kQax1QdEWQly99ZKF9WB3TIgsmdqAylx39AC-tU" />
+  <!-- Google tag (gtag.js) -->
+  <script async src="https://www.googletagmanager.com/gtag/js?id=G-HDSK3NRBFF"></script>
+  <script> window.dataLayer = window.dataLayer || []; function gtag() { dataLayer.push(arguments); } gtag('js', new Date()); gtag('config', 'G-HDSK3NRBFF'); </script>
+</head>
+
+<body>
+
+  <style>
+    /*--------------------------------------------------------------
+  # Google Fonts
+  --------------------------------------------------------------*/
+
+
+    @import url('https://fonts.googleapis.com/css2?family=Great+Vibes&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
+    @import url('https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
+    @import url('https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap');
+    @import url('https://fonts.googleapis.com/css2?family=Philosopher:ital,wght@0,400;0,700;1,400;1,700&display=swap');
+
+
+    /*--------------------------------------------------------------
+  # General
+  --------------------------------------------------------------*/
+    * {
+
+      margin: 0;
+      padding: 0;
+      box-sizing: border-box;
+      list-style-type: none;
+      text-decoration: none;
+
+    }
+
+
+
+
+    /*--------------------------------------------------------------
+  # Body
+  --------------------------------------------------------------*/
+    body {
+      overflow-x: hidden;
+      max-width: 100%;
+      width: 100%;
+      height: 100%;
+
+
+
+
+
+    }
+
+
+/*--------------------------------------------------------------
+# Back to top button
+--------------------------------------------------------------*/
+.back-to-top {
+  position: fixed;
+  visibility: hidden;
+  opacity: 0;
+  right: 15px;
+  bottom: 15px;
+  z-index: 996;
+  background: #c6012c;
+  width: 40px;
+  height: 40px;
+  transition: all 0.4s;
+}
+
+.back-to-top i {
+  font-size: 28px;
+  color: #fff;
+  line-height: 0;
+}
+
+.back-to-top:hover {
+  background: #e72323;
+  color: #fff;
+}
+
+.back-to-top.active {
+  visibility: visible;
+  opacity: 1;
+}
+
+
+
+    /*--------------------------------------------------------------
+  # a Tag
+  --------------------------------------------------------------*/
+    a {
+      text-decoration: none;
+    }
+
+
+
+
+
+.navbar-toggler{
+  border: none;
+background-color: #ffffff;
+  
+}
+
+
+.navbar-toggler:focus{
+  box-shadow: none;
+  outline: none;
+}
+
+.home-logo{
+  display: none;
+ 
+}
+
+.nav-link{
+  font-size: 20px;
+  color: #ffffff;
+  position: relative;
+}
+
+.nav-link:hover{
+  color: #c59d5f;
+  cursor: pointer;
+}
+
+  .dropdown-item:hover{
+  color: #c59d5f;
+  cursor: pointer;
+ 
+
+ }
+.nav-link::before{
+  content: "";
+  position: absolute;
+  bottom: 0;
+  left: 50%;
+  transform: translateX(-50%);
+  width: 0;
+  height: 3px;
+  background-color: #c59d5f;
+  visibility: hidden;
+  transition: 0.5s ease-in-out;
+
+
+}
+.nav-link:hover::before{
+  width: 100%;
+  height: 2px;
+  visibility: visible;
+
+}
+
+
+
+.nav-logo{
+  height: 50px;
+}
+
+
+
+
+    /*--------------------------------------------------------------
+  # Hero Section
+  --------------------------------------------------------------*/
+    #hero {
+
+      width: 100%;
+      height: 100%;
+    }
+
+    .home-slider .swiper-slide img {
+      max-width: 100%;
+      width: 100%;
+      height: 100%;
+    }
+
+    #hero .home-slider .swiper-pagination-bullet {
+      background-color: #ffffff;
+    }
+
+
+    /*--------------------------------------------------------------
+  Food Section
+  --------------------------------------------------------------*/
+    .food {
+      background-image: url('/assets/img/anjappar/food-bg.png');
+      background-position: center;
+      background-size: cover;
+      background-repeat: no-repeat;
+      width: 100%;
+      height: 110vh;
+      margin-left: 5%;
+    }
+
+    .food .food-container {
+      display: grid;
+      grid-template-columns: auto auto;
+      align-items: center;
+      gap: 1.5rem;
+    }
+
+    .food .food-container .temp img {
+      width: 30rem;
+      height: 41rem;
+      position: relative;
+      margin-top: 12%;
+      left: 5%;
+
+    }
+
+    .food .food-container .set {
+      position: relative;
+      top: 20px;
+
+
+    }
+
+
+    .food .food-container .set h3 {
+      font-family: "philosopher", italic;
+      font-weight: 500;
+      font-style: normal;
+      text-transform: capitalize;
+      font-size: 35px;
+      color: #000000;
+      word-spacing: 10px;
+      color: #c59d5f;
+    }
+
+    .food .food-container .set p {
+      font-family: "poppins", sans-serif;
+      font-weight: 400;
+      color: #000000;
+      font-size: 17px;
+      width: 45rem;
+
+    }
+
+    .food .food-container .set .product-box {
+      display: flex;
+      flex-direction: row;
+      align-items: center;
+      justify-content: center;
+      gap: 20px;
+      position: relative;
+      top: 15px;
+      right: 8%;
+    }
+
+    .food .food-container .set .product-box .product-image img {
+      width: 85%;
+      height: 100%;
+    }
+
+    .food .food-container .set .product-box .product-image h4 {
+      text-align: center;
+      margin-top: 20px;
+      position: relative;
+      right: 8%;
+      font-size: 20px;
+    }
+
+    .food .food-container .set .product-box .product-image .title img {
+      width: 85%;
+      height: 100%;
+    }
+
+
+
+    .food .food-container .set .product-box .product-image .title h4 {
+      background-color: #c59d5f;
+      width: 160px;
+      position: relative;
+      left: 15px;
+      border-radius: 20px;
+      color: #ffffff;
+    }
+
+
+
+
+
+
+
+
+    /*--------------------------------------------------------------
+  #Why-Us Section
+  --------------------------------------------------------------*/
+    .why-us {
+      background-image: url('assets/img/anjappar/why-us bg.jpg');
+      height: 110vh;
+      background-position: center;
+      background-repeat: no-repeat;
+    }
+
+    .why-us .why-us-box .why-us-text {
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      justify-content: center;
+    }
+
+    .why-us-box {
+      position: relative;
+      margin-top: 20%;
+      display: flex;
+      gap: 18rem;
+      align-items: center;
+      justify-content: center;
+    }
+
+    .why-us-box .why-us-text img {
+      height: 8rem;
+
+    }
+
+    .why-us-box .why-us-text a {
+      font-family: "philosopher", italic;
+      display: flex;
+      align-items: center;
+      text-align: center;
+      justify-content: center;
+      font-size: 35px;
+      margin-top: 20%;
+      color: #000000;
+    }
+
+
+
+    /*--------------------------------------------------------------
+   Signature Section
+  --------------------------------------------------------------*/
+
+
+    .signature {
+      margin-top: 5%;
+    }
+
+
+
+    .word h4 {
+      color: #c59d5f;
+      font-family: "philosopher", italic;
+      font-weight: 400;
+      font-size: 50px;
+      text-align: center;
+
+    }
+
+    .card_slider {
+      padding: 50px 0;
+    }
+
+
+
+
+    .swiper-container .box-container {
+      padding: 0 15px;
+      max-width: 80%;
+      height: 100%;
+      margin: 0% auto;
+      position: relative;
+      bottom: 250px;
+    }
+
+
+    .signature .swiper-slide .img-box img {
+      max-width: 100%;
+
+    }
+
+
+    .signature .swiper-slide .img-box h5 {
+
+      font-family: "poppins", sans-serif;
+      font-size: 23px;
+      font-weight: 400;
+      color: #ffffff;
+      text-align: center;
+      position: relative;
+      bottom: 60px;
+    }
+
+
+    .arrows {
+      position: absolute;
+      left: 40%;
+      display: flex;
+      width: 300px;
+      align-items: center;
+
+    }
+
+    .arrows button {
+      width: 60px;
+      height: 60px;
+      border-radius: 50%;
+      background-color: #c59d5f;
+      color: #000000;
+      text-align: center;
+      border: none;
+      outline: none;
+      cursor: pointer;
+      transition: 0.5s;
+      position: absolute;
+      right: 50%;
+
+    }
+
+
+    .arrows button:hover {
+      color: #ffffff;
+    }
+
+
+    /*--------------------------------------------------------------
+   Portfolio Section
+  --------------------------------------------------------------*/
+    .portfolio .text-center h4 {
+      color: #c59d5f;
+      font-size: 40px;
+      font-weight: 500;
+      font-family: "philosopher", italic;
+      text-transform: uppercase;
+    }
+
+    .portfolio .portfolio-box {
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      text-align: center;
+      gap: 8rem;
+      position: relative;
+      bottom: 90px;
+
+    }
+
+    .portfolio .portfolio-box a {
+      font-family: "poppins", sans-serif;
+      color: #000000;
+      font-size: 30px;
+      text-transform: uppercase;
+      height: 70px;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      text-align: center;
+    }
+
+    .portfolio .portfolio-box a:hover {
+      background-color: #c59d5f;
+
+      border-radius: 10px;
+      color: #ffffff;
+      transition: 0.5s;
+    }
+
+    .portfolio-box-img {
+      display: flex;
+      flex-direction: row;
+      align-items: center;
+      gap: 3rem;
+
+    }
+
+    .portfolio-box-slide img {
+      width: 100%;
+      height: 100%;
+      opacity: 0.8;
+
+
+
+
+    }
+
+
+
+    .portfolio-box-slide h4 {
+      color: #000000;
+      position: relative;
+      bottom: 150px;
+      text-align: center;
+      font-size: 35px;
+      text-transform: capitalize;
+      font-weight: 600;
+      opacity: 1;
+      font-family: "poppins", sans-serif;
+
+
+    }
+
+    .portfolio .portfolio-box-img .portfolio-box-slide h4:hover {
+      color: #ffffff;
+      cursor: pointer;
+
+    }
+
+
+    .portfolio-box-img-1 {
+      display: flex;
+      flex-direction: row;
+      align-items: center;
+      gap: 3rem;
+    }
+
+    .portfolio-box-slide-1 img {
+      width: 100%;
+      height: 100%;
+
+    }
+
+    .portfolio-box-slide-1 img {
+      width: 100%;
+      height: 100%;
+      opacity: 0.8;
+
+
+
+
+    }
+
+
+
+    .portfolio-box-slide-1 h4 {
+      color: #000000;
+      position: relative;
+      bottom: 150px;
+      text-align: center;
+      font-size: 35px;
+      width: 20rem;
+      position: relative;
+      text-transform: capitalize;
+      left: 50px;
+      font-weight: 600;
+      opacity: 1;
+      font-family: "poppins", sans-serif;
+
+
+    }
+
+    .portfolio .portfolio-box-img-1 .portfolio-box-slide-1 h4:hover {
+      color: #ffffff;
+      cursor: pointer;
+
+    }
+
+
+
+
+    /*--------------------------------------------------------------
+   Discount Section
+  --------------------------------------------------------------*/
+
+    .discount-image {
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      width: 100%;
+      height: 100%;
+    }
+
+    .discount-image img {
+      width: 80%;
+      height: 100%;
+    }
+
+
+    /*--------------------------------------------------------------
+   Contact Section
+  --------------------------------------------------------------*/
+    .contact-img {
+      display: flex;
+      width: 100%;
+      height: 100%;
+    }
+
+    .contact-img img {
+      width: 100%;
+      height: 100%;
+    }
+
+
+    /*--------------------------------------------------------------
+   Gallery Section
+  --------------------------------------------------------------*/
+
+
+    .gallery {
+      background-color: #ffffff;
+    }
+
+
+    .gallery h4 {
+      font-family: "philosopher", italic;
+      font-weight: 400;
+      color: #c59d5f;
+      font-size: 35px;
+      text-align: center;
+      position: relative;
+      bottom: 50px;
+    }
+
+    .gallery .swiper {
+      max-width: 90%;
+      width: 100%;
+      height: 100%;
+      margin-left: auto;
+      margin-right: auto;
+    }
+
+    .gallery .swiper-slide {
+      text-align: center;
+      font-size: 18px;
+      background: #fff;
+      height: calc((100% - 30px) / 2) !important;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+    }
+
+    .gallery .swiper-slide img {
+      width: 100%;
+      height: 100%;
+    }
+
+    .gallery .swiper-pagination {
+      position: relative;
+      margin-top: 5%;
+
+    }
+
+
+    .gallery .swiper-pagination-bullet {
+
+      background-color: #ff0000;
+    }
+
+    .gallery .swiper-pagination-active {
+      background-color: #ff0000;
+    }
+
+
+    /*--------------------------------------------------------------
+  #Opening-hours Section
+  --------------------------------------------------------------*/
+    .opening-hours-img {
+      display: flex;
+      width: 100%;
+      height: 100%;
+    }
+
+    .opening-hours-img img {
+      width: 100%;
+      height: 100%;
+    }
+
+
+    /*--------------------------------------------------------------
+   Footer Section
+  --------------------------------------------------------------*/
+
+
+    #footer {
+
+      background-image: url('assets/img/anjappar/footer-bg.png');
+      background-size: cover;
+      background-position: center;
+      background-repeat: no-repeat;
+      width: 100%;
+      height: 100%;
+
+
+
+
+
+    }
+
+    .footer .logo img {
+      margin-top: 10%;
+      height: 10rem;
+
+    }
+
+
+    .footer .footer-box .footer-text {
+      display: grid;
+      grid-template-columns: auto auto auto;
+      align-items: center;
+      justify-content: center;
+      gap: 3rem;
+      margin-top: 5%;
+
+    }
+
+    .footer .footer-box .footer-text .center {
+      display: flex;
+      align-items: start;
+
+    }
+
+    .footer .footer-box .footer-text .footer-word .text {
+
+      text-align: left;
+      position: relative;
+      bottom: 20px;
+    }
+
+    .footer .footer-box .footer-text .footer-word .text h4 {
+
+      position: relative;
+      top: 5px;
+      font-family: "roboto", sans-serif;
+      font-weight: 500;
+
+
+    }
+
+    .footer .footer-box .footer-text .footer-word .text h4::after {
+
+
+      content: "";
+      position: absolute;
+      display: block;
+      width: 35%;
+      height: 3px;
+      background-color: #c59d5f;
+
+    }
+
+    .footer .footer-box .footer-text .footer-word .text-1 {
+
+      text-align: left;
+      position: relative;
+      bottom: 20px;
+    }
+
+    .footer .footer-box .footer-text .footer-word .text-1 h4 {
+
+      position: relative;
+      top: 5px;
+      font-family: "roboto", sans-serif;
+      font-weight: 500;
+
+
+    }
+
+    .footer .footer-box .footer-text .footer-word .text-1 h4::after {
+
+
+      content: "";
+      position: absolute;
+      display: block;
+      width: 45%;
+      height: 3px;
+      background-color: #c59d5f;
+
+    }
+
+
+    .footer .footer-box .footer-text .footer-word .text-2 {
+
+      text-align: left;
+      position: relative;
+      bottom: 20px;
+    }
+
+    .footer .footer-box .footer-text .footer-word .text-2 h4 {
+
+      position: relative;
+      top: 5px;
+      font-family: "roboto", sans-serif;
+      font-weight: 500;
+
+
+    }
+
+    .footer .footer-box .footer-text .footer-word .text-2 h4::after {
+
+
+      content: "";
+      position: absolute;
+      display: block;
+      width: 55%;
+      height: 3px;
+      background-color: #c59d5f;
+
+    }
+
+
+
+
+
+
+    .footer .footer-box .footer-text .footer-word .center p {
+      color: #000000;
+      font-size: 14px;
+      font-weight: 400;
+    }
+
+    .footer .footer-box .footer-text .footer-word p {
+      color: #000000;
+      font-family: "poppins", sans-serif;
+      font-weight: 400;
+      font-size: 14px;
+    }
+
+
+
+
+    /*--------------------------------------------------------------
+   Footer Copyright And Credits Section
+  --------------------------------------------------------------*/
+
+
+    #footer .footer-copy {
+
+      background-color: #c59d5f;
+      padding: 6px 0;
+    }
+
+    #footer .copyright {
+      font-size: 16px;
+      padding-top: 5px;
+      text-transform: uppercase;
+      color: #ffffff;
+      font-weight: bold;
+      font-family: "roboto", sans-serif;
+      position: relative;
+      right: 15%;
+    }
+
+    #footer .credits {
+      padding-top: 5px;
+      font-size: 16px;
+      color: #ffffff;
+      text-align: right;
+      font-family: "roboto", sans-serif;
+      position: relative;
+      font-weight: bold;
+      text-transform: uppercase;
+    }
+
+    #footer .credits a {
+      color: #ffffff;
+      font-weight: bold;
+      font-family: "roboto", sans-serif;
+      position: relative;
+      text-transform: uppercase;
+
+    }
+
+    /*--------------------------------------------------------------
+   @Media Responsive Screen For Laptop (1024px)
+  --------------------------------------------------------------*/
+
+    @media screen and (max-width:1024px) {
+
+
+
+      /*--------------------------------------------------------------
+  Navbar
+  --------------------------------------------------------------*/
+
+      .navbar {
+        position: relative;
+        left: auto;
+
+
+      }
+
+      /*--------------------------------------------------------------
+  # Hero Section
+  --------------------------------------------------------------*/
+      #hero {
+        width: 100%;
+        height: 100%;
+      }
+
+      .home-slider .swiper-slide img {
+        max-width: 100%;
+        width: 100%;
+        height: 100%;
+      }
+
+      #hero .home-slider .swiper-pagination-bullet {
+        background-color: #ffffff;
+      }
+
+
+
+
+
+      /*--------------------------------------------------------------
+  Food Section
+  --------------------------------------------------------------*/
+      .food {
+        background-image: url('/assets/img/anjappar/food-bg.png');
+        background-position: center;
+        background-size: cover;
+        background-repeat: no-repeat;
+        width: 100%;
+        height: 100%;
+        margin-left: auto;
+
+      }
+
+      .food .food-container {
+        display: grid;
+        grid-template-columns: auto auto;
+        align-items: center;
+        gap: 3rem;
+      }
+
+      .food .food-container .temp img {
+        width: 25rem;
+        height: 35rem;
+        position: relative;
+        margin-top: 20%;
+        left: 5%;
+
+      }
+
+      .food .food-container .set {
+        position: relative;
+        top: 20px;
+
+
+
+      }
+
+
+      .food .food-container .set h3 {
+        font-family: "philosopher", italic;
+        font-weight: 500;
+        font-style: normal;
+        text-transform: capitalize;
+        font-size: 35px;
+        color: #000000;
+        word-spacing: 10px;
+        color: #c59d5f;
+      }
+
+      .food .food-container .set p {
+        font-family: "poppins", sans-serif;
+        font-weight: 400;
+        color: #000000;
+        font-size: 17px;
+        width: 35rem;
+
+      }
+
+      .food .food-container .set .product-box {
+        display: flex;
+        flex-direction: row;
+        align-items: center;
+        justify-content: center;
+        gap: 30px;
+
+      }
+
+      .food .food-container .set .product-box .product-image img {
+        width: 100%;
+        height: 100%;
+      }
+
+      .food .food-container .set .product-box .product-image .title img {
+        width: 115px;
+        height: 153px;
+        margin-left: 20%;
+
+      }
+
+
+
+
+      /*--------------------------------------------------------------
+  # why-us box section
+  --------------------------------------------------------------*/
+
+      .why-us-box {
+        display: flex;
+        gap: 17rem;
+        margin-top: 30%;
+      }
+
+
+
+      /*--------------------------------------------------------------
+  Footer Section
+  --------------------------------------------------------------*/
+      #footer {
+        background-image: url('assets/img/anjappar/footer-bg.png');
+        background-size: cover;
+        background-position: center;
+        background-repeat: no-repeat;
+      }
+
+
+
+
+
+
+      .footer .footer-box .footer-text .footer-word .text h4::after {
+
+
+        content: "";
+        position: absolute;
+        display: block;
+        width: 45%;
+        height: 3px;
+        background-color: #c59d5f;
+
+      }
+
+      .footer .footer-box .footer-text .footer-word .text-1 h4::after {
+
+
+        content: "";
+        position: absolute;
+        display: block;
+        width: 55%;
+        height: 3px;
+        background-color: #c59d5f;
+
+      }
+
+
+      .footer .footer-box .footer-text .footer-word .text-2 h4::after {
+
+
+        content: "";
+        position: absolute;
+        display: block;
+        width: 63%;
+        height: 3px;
+        background-color: #c59d5f;
+
+      }
+
+
+
+
+
+    }
+
+    /*--------------------------------------------------------------
+   @Media Responsive Screen For Tablet (768px)
+  --------------------------------------------------------------*/
+
+
+    @media screen and (max-width:768px) {
+
+.home-logo{
+  display: flex;
+}
+
+      /*--------------------------------------------------------------
+  #Hero Section
+  --------------------------------------------------------------*/
+
+
+      #hero {
+        margin-top: 10%;
+        height: 100%;
+      }
+
+
+
+
+      /*--------------------------------------------------------------
+  Food  Section
+  --------------------------------------------------------------*/
+      .food {
+        width: 100%;
+        height: 280vh;
+        margin-left: auto;
+      }
+
+      .food .food-container {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+
+      }
+
+      .food .food-container .temp img {
+        width: 100%;
+        height: 100%;
+        position: relative;
+        left: auto;
+
+
+
+
+      }
+
+
+
+      .food .food-container .set h3 {
+        font-family: "philosopher", italic;
+        font-weight: 400;
+        font-style: normal;
+        text-transform: capitalize;
+        font-size: 30px;
+        color: #c59d5f;
+        word-spacing: 10px;
+        text-align: center;
+
+      }
+
+      .food .food-container .set p {
+        font-family: "poppins", sans-serif;
+        font-weight: 400;
+        color: #000000;
+        font-size: 16px;
+        text-align: center;
+        position: relative;
+        width: 30rem;
+
+
+      }
+
+      .food .food-container .set .product-box {
+        display: flex;
+        flex-wrap: wrap;
+        gap: 20px;
+        width: 100%;
+        height: 100%;
+        position: relative;
+        left: 3%;
+
+      }
+
+      .food .food-container .set .product-box .product-image img {
+        width: 85%;
+        height: 100%;
+      }
+
+      .food .food-container .set .product-box .product-image .title img {
+        width: 85%;
+        height: 100%;
+        margin-left: auto;
+
+      }
+
+
+
+
+
+
+
+      /*--------------------------------------------------------------
+why-us-box  Section
+  --------------------------------------------------------------*/
+      .why-us {
+
+        background-position: center;
+        background-size: cover;
+        height: 100%;
+
+
+
+      }
+
+      .why-us-box {
+        display: flex;
+        flex-direction: column;
+        gap: 5rem;
+        align-items: center;
+        justify-content: center;
+        position: relative;
+        bottom: 120px;
+
+      }
+
+      /*--------------------------------------------------------------
+   Signature Section
+  --------------------------------------------------------------*/
+
+      .signature {
+        margin-top: 5%;
+      }
+
+
+
+      .word h4 {
+        color: #c59d5f;
+        font-family: "philosopher", italic;
+        font-weight: 400;
+        font-size: 50px;
+        text-align: center;
+
+      }
+
+      .card_slider {
+        padding: 50px 0;
+      }
+
+
+
+
+      .swiper-container .box-container {
+        padding: 0 15px;
+        max-width: 100%;
+        margin: 0% auto;
+        position: relative;
+        bottom: 90px;
+      }
+
+
+      .signature .swiper-slide .img-box img {
+        margin-left: 5%;
+        max-width: 90%;
+        height: 100%;
+
+
+      }
+
+
+      .signature .swiper-slide .img-box h5 {
+
+        font-family: "poppins", sans-serif;
+        font-size: 23px;
+        font-weight: 400;
+        color: #ffffff;
+        text-align: center;
+        position: relative;
+        bottom: 50px;
+
+      }
+
+
+      .arrows {
+        position: absolute;
+        left: 30%;
+        display: flex;
+        width: 300px;
+        align-items: center;
+
+      }
+
+      .arrows button {
+        width: 60px;
+        height: 60px;
+        border-radius: 50%;
+        background-color: #c59d5f;
+        color: #000000;
+        text-align: center;
+        border: none;
+        outline: none;
+        cursor: pointer;
+        transition: 0.5s;
+        position: absolute;
+        right: 50%;
+
+      }
+
+
+      .arrows button:hover {
+        color: #ffffff;
+      }
+
+
+
+      /*--------------------------------------------------------------
+  portfolio section
+  --------------------------------------------------------------*/
+      .portfolio-box {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        margin-top: 30%;
+        gap: 2rem;
+      }
+
+      .portfolio-box-img {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+      }
+
+      .portfolio-box-slide img {
+        width: 100%;
+        height: 100%;
+      }
+
+      .portfolio-box-img-1 {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+      }
+
+      .portfolio-box-slide-1 img {
+        width: 100%;
+        height: 100%;
+      }
+
+      .del {
+        display: none;
+      }
+
+
+      /*--------------------------------------------------------------
+  Footer Section
+  --------------------------------------------------------------*/
+
+      #footer {
+
+        background-image: url('assets/img/anjappar/footer-bg.png');
+        background-size: cover;
+        background-position: center;
+        background-repeat: no-repeat;
+        width: 100%;
+        height: 100%;
+
+
+
+
+
+
+
+      }
+
+
+
+
+
+
+
+
+
+      .footer .footer-box .footer-text {
+        display: grid;
+        grid-template-columns: repeat(1, 1fr);
+        align-items: center;
+        justify-content: center;
+
+        left: 10%;
+        margin-top: 18%;
+
+
+
+      }
+
+      .footer .footer-box .footer-text .footer-word .text h4::after {
+
+
+        content: "";
+        position: absolute;
+        display: block;
+        width: 33%;
+        height: 3px;
+        background-color: #c59d5f;
+
+      }
+
+      .footer .footer-box .footer-text .footer-word .text-1 h4::after {
+
+
+        content: "";
+        position: absolute;
+        display: block;
+        width: 38%;
+        height: 3px;
+        background-color: #c59d5f;
+
+      }
+
+
+      .footer .footer-box .footer-text .footer-word .text-2 h4::after {
+
+
+        content: "";
+        position: absolute;
+        display: block;
+        width: 40%;
+        height: 3px;
+        background-color: #c59d5f;
+
+      }
+
+
+      /*--------------------------------------------------------------
+  Footer Copyrights And Credits Section
+  --------------------------------------------------------------*/
+
+      #footer .footer-copy,
+      #footer .credits {
+        text-align: center;
+      }
+
+
+      #footer .copyright {
+        position: relative;
+        left: 1px;
+      }
+
+    }
+
+
+
+    /*--------------------------------------------------------------
+   @Media Responsive Screen For Mobile (430px)
+  --------------------------------------------------------------*/
+
+    @media screen and (max-width:430px) {
+
+
+
+      /*--------------------------------------------------------------
+  Food  Section
+  --------------------------------------------------------------*/
+      .food {
+        height: 380vh;
+      }
+
+
+
+
+
+      .food .food-container .set h3 {
+        font-family: "philosopher", italic;
+        font-weight: 400;
+        font-style: normal;
+        text-transform: capitalize;
+        font-size: 28px;
+        width: 25rem;
+        margin-left: 30px;
+        word-spacing: 10px;
+      }
+
+      .food .food-container .set p {
+        font-family: "poppins", sans-serif;
+        font-weight: 400;
+        color: #000000;
+        font-size: 16px;
+        width: 30rem;
+        margin-left: 60px;
+        text-align: center;
+        width: 20rem;
+
+
+      }
+
+      .food .food-container .set .product-box {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+
+      }
+
+
+      /*--------------------------------------------------------------
+   Signature Section
+  --------------------------------------------------------------*/
+
+      .signature {
+        margin-top: 5%;
+      }
+
+
+
+      .word h4 {
+        color: #c59d5f;
+        font-family: "philosopher", italic;
+        font-weight: 400;
+        font-size: 50px;
+        text-align: center;
+
+      }
+
+      .card_slider {
+        padding: 50px 0;
+      }
+
+
+
+
+      .swiper-container .box-container {
+        padding: 0 15px;
+        max-width: 100%;
+        margin: 0% auto;
+        position: relative;
+        bottom: 90px;
+      }
+
+
+      .signature .swiper-slide .img-box img {
+        margin-left: 2%;
+        max-width: 95%;
+        height: 100%;
+
+
+      }
+
+
+      .signature .swiper-slide .img-box h5 {
+
+        font-family: "poppins", sans-serif;
+        font-size: 23px;
+        font-weight: 400;
+        color: #ffffff;
+        text-align: center;
+        position: relative;
+        bottom: 50px;
+        left: 10px;
+      }
+
+
+      .arrows {
+        position: absolute;
+        left: 30%;
+        display: flex;
+        width: 300px;
+        align-items: center;
+
+      }
+
+      .arrows button {
+        width: 60px;
+        height: 60px;
+        border-radius: 50%;
+        background-color: #c59d5f;
+        color: #000000;
+        text-align: center;
+        border: none;
+        outline: none;
+        cursor: pointer;
+        transition: 0.5s;
+        position: absolute;
+        right: 50%;
+
+      }
+
+
+      .arrows button:hover {
+        color: #ffffff;
+      }
+
+
+
+
+      /*--------------------------------------------------------------
+  portfolio section
+  --------------------------------------------------------------*/
+      .portfolio-box {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        margin-top: 30%;
+        gap: 2rem;
+      }
+
+      .portfolio-box-img {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+      }
+
+      .portfolio-box-slide img {
+        width: 100%;
+        height: 100%;
+      }
+
+      .portfolio-box-img-1 {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+      }
+
+      .portfolio-box-slide-1 img {
+        width: 100%;
+        height: 100%;
+      }
+
+      .del {
+        display: none;
+      }
+
+
+
+      /*--------------------------------------------------------------
+  Footer Section
+  --------------------------------------------------------------*/
+
+      #footer {
+        background-image: url('assets/img/anjappar/footer-bg.png');
+        background-size: cover;
+        background-position: center;
+        background-repeat: no-repeat;
+        width: 100%;
+        height: 100%;
+
+      }
+
+
+
+
+
+
+      .footer .footer-box .footer-text .footer-word .text h4::after {
+
+
+        content: "";
+        position: absolute;
+        display: block;
+        width: 35%;
+        height: 3px;
+        background-color: #c59d5f;
+
+      }
+
+      .footer .footer-box .footer-text .footer-word .text-1 h4::after {
+
+
+        content: "";
+        position: absolute;
+        display: block;
+        width: 40%;
+        height: 3px;
+        background-color: #c59d5f;
+
+      }
+
+
+      .footer .footer-box .footer-text .footer-word .text-2 h4::after {
+
+
+        content: "";
+        position: absolute;
+        display: block;
+        width: 45%;
+        height: 3px;
+        background-color: #c59d5f;
+
+      }
+
+
+      .footer .footer-box .footer-text .footer-word .center p {
+        color: #000000;
+        font-size: 14px;
+
+
+      }
+
+      .footer .footer-box .footer-text .footer-word p {
+        color: #000000;
+        font-family: "poppins", sans-serif;
+        font-weight: 400;
+        font-size: 14px;
+      }
+
+
+
+      /*--------------------------------------------------------------
+  Footer Copyrights And Credits Section
+  --------------------------------------------------------------*/
+
+
+      #footer .footer-copy,
+      #footer .credits {
+        text-align: center;
+      }
+
+
+
+
+
+
+      #footer .copyright {
+        position: relative;
+        left: 1px;
+        font-size: 15px;
+      }
+
+      #footer .credits {
+        position: relative;
+        left: 1px;
+        font-size: 15px;
+      }
+
+
+      #footer .credits a {
+        position: relative;
+        left: 1px;
+        font-size: 15px;
+      }
+
+
+
+
+
+
+
+
+
+    }
+  </style>
+
+
+  <!-- ======= Header ======= -->
+   <header class="header">
+    <nav class="navbar navbar-expand-lg fixed-top">
+      <div class="container-fluid">
+        <img src="assets/img/anjappar/logo.png" class="home-logo">
+        <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+          <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse" id="navbarNav">
+          <ul class="navbar-nav me-auto mb-2 mx-5 mb-lg-0 px-5">
+            <li class="nav-item ">
+              <a class="nav-link mx-lg-5 mt-2">Home</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link mx-lg-5 mt-2" href="#">About</a>
+            </li>
+            <li class="nav-item dropdown">
+              <a class="nav-link dropdown-toggle mx-lg-5 mt-2 text-white" href="#" id="navbarDropdown" role="button"
+                data-bs-toggle="dropdown" aria-expanded="false">
+                Menu
+              </a>
+              <ul class="dropdown-menu" aria-labelledby="navbarDropdown">
+                <li><a class="dropdown-item" href="#">Dining</a></li>
+                <li><a class="dropdown-item" href="#">Catering</a></li>
+              </ul>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link mx-lg-5 mt-2" href="#"><img src="assets/img/anjappar/logo.png" class="nav-logo"></a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link mx-lg-5 mt-2" href="#">Signature</a>
+            </li>
+            <li class="nav-item">
+            <a class="nav-link mx-lg-5 mt-2" href="#">Contact</a>
+            </li>
+    </nav>
+  </header>
+
+
+
+  <!-- End Header -->
+
+  <!-- ======= Hero Section ======= -->
+
+
+  <section id="hero" class="d-flex align-items-center p-0">
+    <div class="container-fluid  p-0 position-relative" data-aos="fade-up" data-aos-delay="500">
+      <div class="home-slider swiper">
+        <div class="swiper-wrapper align-items-center">
+          <div class="swiper-slide">
+            <img src="assets/img/Home banner/home-banner-1.jpg" class="img-fluid" alt="" />
+          </div>
+          <div class="swiper-slide">
+            <img src="assets/img/Home banner/home-banner-2.jpg" class="img-fluid" alt="" />
+          </div>
+          <div class="swiper-slide">
+            <img src="assets/img/Home banner/home-banner-3.jpg" class="img-fluid" alt="" />
+          </div>
+          <div class="swiper-slide">
+            <img src="assets/img/Home banner/home-banner-4.jpg" class="img-fluid" alt="" />
+          </div>
+          <div class="swiper-slide">
+            <img src="assets/img/Home banner/home-banner-5.jpg" class="img-fluid" alt="" />
+          </div>
+
+        </div>
+
+        <!-- Buttons -->
+        <div class="swiper-button-prev" style=" color:#fff;"></div>
+        <div class="swiper-button-next" style="color:#fff;"></div>
+        <div class="swiper-pagination"></div>
+      </div>
+    </div>
+  </section>
+
+  <!-- End Hero Section -->
+  <!--#Main Section-->
+  <main id="main" class="anj-home">
+
+    <!-- ======= Signature Section ======= -->
+    <section id="signature" class="signature">
+      <div class="container">
+        <div class="word">
+
+          <div class="swiper-container">
+            <img src="assets/img/anjappar/signature Dishes.png" alt="" style="width: 100%; height: 100%;">
+            <div class="box-container">
+              <div class="swiper card_slider">
+                <div class="swiper-wrapper">
+                  <div class="swiper-slide">
+                    <div class="img-box">
+                      <img src="assets/img/anjappar/Chicken Biriyani.png">
+                      <h5>Chicken Biriyani</h5>
+                    </div>
+                  </div>
+                  <div class="swiper-slide">
+                    <div class="img-box">
+                      <img src="assets/img/anjappar/Mutton Biriyani.png">
+                      <h5>Mutton Biriyani</h5>
+                    </div>
+                  </div>
+                  <div class="swiper-slide">
+                    <div class="img-box">
+                      <img src="assets/img/anjappar/Garlic Chicken.png">
+                      <h5>Garlic Chicken</h5>
+                    </div>
+                  </div>
+                  <div class="swiper-slide">
+                    <div class="img-box">
+                      <img src="assets/img/anjappar/Chilli Fried Prawns.png">
+                      <h5>Chilli Fried Prawns</h5>
+                    </div>
+                  </div>
+
+                  <div class="swiper-slide">
+                    <div class="img-box">
+                      <img src="assets/img/anjappar/Pepper Chicken Fry.png">
+                      <h5>pepper chicken fry</h5>
+                    </div>
+                  </div>
+                  <div class="swiper-slide">
+                    <div class="img-box">
+                      <img src="assets/img/anjappar/Nandu Varuval.png">
+                      <h5>Nandu Masala Varuval</h5>
+                    </div>
+                  </div>
+
+
+                </div>
+
+              </div>
+              <div class="arrows">
+                <button class="swiper-button-prev"></button>
+                <button class="swiper-button-next"></button>
+              </div>
+            </div>
+
+          </div>
+
+        </div>
+    </section>
+    <!-- End Signature Section -->
+
+    <!--Food Section-->
+    <section class="food">
+      <div class="food-container">
+        <div class="temp">
+          <img src="assets/img/anjappar/food-image-1.png">
+        </div>
+
+        <div class="set" data-aos="zoom-in">
+          <h3>The Flavours of Chettinadu Cuisine</h3>
+          <p>We are very proud to offer you one of the most unique flavours of india. chettinadu cusine, and one of the
+            most sought cuisines in our neighborhood </p>
+          <div class="product-box">
+
+            <div class="product-image">
+              <div class="title">
+                <img src="assets/img/anjappar/Breakfast.png">
+                <h4>Break Fast</h4>
+              </div>
+            </div>
+
+
+            <div class="product-image">
+
+              <img src="assets/img/anjappar/lunch.png">
+              <h4>Lunch</h4>
+            </div>
+
+
+            <div class="product-image">
+
+              <img src="assets/img/anjappar/Dinner.png">
+              <h4>Dinner</h4>
+
+            </div>
+
+
+
+            <div class="product-image">
+              <img src="assets/img/anjappar/Starters.png">
+              <h4>Starters</h4>
+            </div>
+
+
+
+
+          </div>
+
+        </div>
+
+
+
+
+      </div>
+    </section>
+    <!--End Food Section-->
+
+    <!-- ======= Why Us Section ======= -->
+    <section id="why-us" class="why-us">
+      <div class="container">
+        <div class="row">
+          <div class="why-us-box">
+            <div class="why-us-text">
+              <img src="assets/img/anjappar/icon-1.png" alt="">
+              <a href="dining.html">Everyday Menu</a>
+            </div>
+            <div class="why-us-text">
+              <img src="assets/img/anjappar/icon-2.png" alt="">
+              <a href="catering.html">Catering Menu</a>
+            </div>
+            <div class="why-us-text">
+              <img src="assets/img/anjappar/icon-3.png" alt="">
+              <a href="signature.html">Signature Menu</a>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+    <!-- End Why Us Section -->
+
+
+
+
+
+    <!-- Portfolio Section -->
+    <section class="portfolio " id="portfolio">
+      <div class="container">
+        <div class="text-center">
+          <h4>our Special Dishes</h4>
+          <img src="assets/img/anjappar/box line.jpg" alt="" class="del">
+          <div class="portfolio-box">
+            <a href="main-dishes.html">Main dishes</a>
+            <a href="sea-food.html">Sea-food</a>
+            <a href="desserts.html">Desserts</a>
+            <a href="beverages.html">Beverages</a>
+            </ul>
+          </div>
+        </div>
+
+        <div class="portfolio-box-img">
+          <div class="portfolio-box-slide">
+            <img src="assets/img/anjappar/chicken-biriyani-with-valai.png" alt="">
+            <h4>Chicken Biriyani</h4>
+          </div>
+          <div class="portfolio-box-slide">
+            <img src="assets/img/anjappar/portfolio-tandoori-chicken.png" alt="">
+            <h4>Tandoori Chicken</h4>
+          </div>
+          <div class="portfolio-box-slide">
+            <img src="assets/img/anjappar/Aatu kaal paaya.png" alt="">
+            <h4>Aatu kaal payaa</h4>
+          </div>
+
+        </div>
+        <div class="portfolio-box-img-1">
+          <div class="portfolio-box-slide-1">
+            <img src="assets/img/anjappar/Chettinadu Chicken.png" alt="">
+            <h4>chettinadu chicken</h4>
+          </div>
+
+          <div class="portfolio-box-slide-1">
+            <img src="assets/img/anjappar/portfolio pepper chicken-fry.png" alt="">
+            <h4>pepper chicken fry</h4>
+          </div>
+          <div class="portfolio-box-slide-1">
+            <img src="assets/img/anjappar/Nandu Varuval Masala.png" alt="">
+            <h4>Nandu masala Varuval</h4>
+          </div>
+        </div>
+
+      </div>
+    </section>
+
+    <!--End Portfolio Section-->
+
+
+
+
+    <!--Discount Section-->
+    <section class="Discount">
+      <div class="discount-image">
+        <img src="assets/img/anjappar/Takeouts.png">
+      </div>
+    </section>
+
+    <!--End Discount Section-->
+
+
+
+    <!-- ======= Gallery Section ======= -->
+    <section class="gallery">
+      <h4>Popular Dishes</h4>
+      <div class="swiper gallery_slider">
+        <div class="swiper-wrapper">
+          <div class="swiper-slide"><img src="assets/img/anjappar/Dish-1.png"></div>
+          <div class="swiper-slide"><img src="assets/img/anjappar/Dish-2.png"></div>
+          <div class="swiper-slide"><img src="assets/img/anjappar/Dish-3.png"></div>
+          <div class="swiper-slide"><img src="assets/img/anjappar/Dish-4.png"></div>
+          <div class="swiper-slide"><img src="assets/img/anjappar/Dish-5.png"></div>
+          <div class="swiper-slide"><img src="assets/img/anjappar/Dish-6.png"></div>
+          <div class="swiper-slide"><img src="assets/img/anjappar/Dish-7.png"></div>
+        </div>
+        <div class="swiper-pagination"></div>
+
+      </div>
+    </section>
+
+    <!-- End Gallery Section -->
+    <!-- ======= Contact Section ======= -->
+    <section id="contact" class="contact">
+      <div class="contact-img">
+        <img src="assets/img/anjappar/delivey.png" alt="" class="img-fluid">
+      </div>
+
+
+    </section>
+
+
+    <!-- End Contact Section -->
+
+    <!--Opening Hours Section-->
+    <section class="opening-hours">
+      <div class="opening-hours-img">
+        <img src="assets/img/anjappar/opening-hours.png" alt="" class="img-fluid">
+      </div>
+    </section>
+    <!-- End Opening Hours Section-->
+
+
+  </main>
+  <!-- End #main -->
+
+  <!-- ======= Footer ======= -->
+
+  <footer id="footer" class="footer">
+    <div class="footer-top">
+      <div class="container-fluid">
+        <div class="row">
+          <div class=" col-lg-12 image text-center"> <a href="index.html" class="logo">
+              <img src="assets/img/anjappar/Footer-logo.png" class="img-fluid"></a> </div>
+        </div>
+        <div class="footer-box">
+
+          <div class="footer-text">
+
+            <div class="footer-word">
+              <div class="text">
+                <h4 style="color: #c59d5f;">BRAMPTON</h4>
+              </div>
+              <div class="center">
+                <p>Find Us:</p>
+                <p>Bartley's Square, Unit #5 1 Bartley Bull Pkwy,<br> Brampton, ON - L6W 3T7 (steeles & Highway 10)</p>
+              </div>
+
+              <div class="center">
+                <p>Call Us:</p>
+                <p>905-450-7575</p>
+              </div>
+
+              <div class="center">
+                <p>E-mail:</p>
+                <p>info@anjapparcanada.ca</p>
+              </div>
+              <div class="business">
+                <p>Mon to Thu : 11:30 AM - 10:00 PM</p>
+                <p>Fri : 11:30 AM - 11:00 PM</p>
+                <p>Sat : 10:00 AM - 11:00 PM</p>
+                <p>Sun : 10:00 AM - 10:00 PM</p>
+              </div>
+            </div>
+            <div class="footer-word">
+              <div class="text-1">
+                <h4 style="color: #c59d5f;">MISSISSAUGA</h4>
+              </div>
+              <div class="center">
+                <p>Find Us:
+                <p>
+                <p>4310 Sherwood Towne Blvd Unit 1 Mississauga,<br> ON - L4Z 4C4 (Hurontario And Rathburn Street)</p>
+              </div>
+
+              <div class="center">
+                <p>Call Us:</p>
+                <p>905-272-2232</p>
+              </div>
+
+              <div class="center">
+                <p>E-mail:</p>
+                <p>info@anjapparcanada.ca</p>
+              </div>
+              <div class="business">
+                <p>Mon to Thu : 11:30 AM - 10:00 PM</p>
+                <p>Fri : 11:30 AM - 11:00 PM</p>
+                <p>Sat : 10:00 AM - 11:00 PM</p>
+                <p>Sun : 10:00 AM - 10:00 PM</p>
+              </div>
+            </div>
+            <div class="footer-word">
+              <div class="text-2">
+                <h4 style="color: #c59d5f;">SCARBOROUGH</h4>
+              </div>
+              <div class="center">
+                <p>Find Us:</p>
+                <p>3090 Eglinton Avenue East Scarborough <br>ON - M1J 2H1 (Eglinton & Markham)</p>
+              </div>
+
+              <div class="center">
+                <p>Call Us:</p>
+                <p>416-265-269</p>
+              </div>
+
+              <div class="center">
+                <p>E-mail:</p>
+                <p>info@anjapparcanada.ca</p>
+              </div>
+              <div class="business">
+                <p>Mon to Thu : 11:30 AM - 10:00 PM</p>
+                <p>Fri : 11:30 AM - 11:00 PM</p>
+                <p>Sat : 10:00 AM - 11:00 PM</p>
+                <p>Sun : 10:00 AM - 10:00 PM</p>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+
+
+    </div>
+
+    <!-- Footer Copy Section -->
+
+    <div class="footer-copy">
+      <div class="container">
+        <div class="row">
+          <div class="col-lg-6">
+            <div class="copyright">
+              &copy; Copyright <strong><span>Anjappar</span></strong>. All Rights Reserved
+            </div>
+          </div>
+          <div class="col-lg-6">
+            <div class="credits">
+              Designed by <a taget="_blank" href="https://mimedialabs.com/">MI MEDIA LABS</a>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <!-- End Footer Copy Section -->
+
+  </footer><!-- End Footer -->
+
+  <!-- Back To Top -->
+  <a href="#" class="back-to-top d-flex align-items-center justify-content-center"><i
+      class="bi bi-arrow-up-short"></i></a>
+  <!-- End Back To Top -->
+
+  <!--Bootstrap Js Files -->
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM" crossorigin="anonymous"></script>
+  <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.9.2/dist/umd/popper.min.js" integrity="sha384-IQsoLXl5PILFhosVNubq5LC7Qb9DXgDA9i+tQ8Zj3iwWAwPtgFTxbJ8NT4GN1R8p" crossorigin="anonymous"></script>
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.min.js" integrity="sha384-cVKIPhGWiC2Al4u+LWgxfKTRIcfu0JTxR+EQDz/bgldoEyl4H0zUF0QKbrJ0EcQF" crossorigin="anonymous"></script>
+ 
+
+  <!-- Vendor JS Files -->
+  <script src="assets/vendor/aos/aos.js"></script>
+  <script src="assets/vendor/bootstrap/js/bootstrap.bundle.min.js"></script>
+  <script src="assets/vendor/glightbox/js/glightbox.min.js"></script>
+  <script src="assets/vendor/swiper/swiper-bundle.min.js"></script>
+  <!--box-icons-->
+  <script src="https://unpkg.com/boxicons@2.1.4/dist/boxicons.js"></script>
+  <!--swiper Js-->
+  <script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
+
+  <!-- Template Main JS File -->
+  <script src="assets/js/main.js"></script>
+  <script src="assets/js/swiper-bundle.min.js"></script>
+  <script src="script.js"></script>
+
+
+
+
+
+
+
+
+</body>
+
+</html>
